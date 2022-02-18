@@ -10,30 +10,27 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+RiddhaHttp is a http service over http package.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Easy http methods as services.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Run this command:
 
-## Usage
+With Flutter:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+ $ flutter pub add riddhahttp
+This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 
-```dart
-const like = 'sample';
-```
+dependencies:
+  riddhahttp: ^0.0.1
+Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
 
-## Additional information
+Import it
+Now in your Dart code, you can use:
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+import 'package:riddhahttp/riddhahttp.dart';
+
