@@ -11,7 +11,9 @@ class RiddhaHttpService {
     _client = http.Client();
   }
 
-  Future<dynamic> get(String url, {var headers}) async {
+//Get method
+  Future<Map<String, dynamic>> get(String url,
+      {Map<String, String>? headers}) async {
     var response = await _client.get(Uri.parse(url),
         headers: headers ??
             <String, String>{
@@ -25,8 +27,9 @@ class RiddhaHttpService {
     }
   }
 
-  Future<dynamic> post(String url, Map<String, dynamic> json,
-      {var headers}) async {
+//Post Method
+  Future<Map<String, dynamic>> post(String url, Map<String, dynamic> json,
+      {Map<String, String>? headers}) async {
     var response = await _client.post(Uri.parse(url),
         headers: headers ??
             <String, String>{
@@ -41,6 +44,7 @@ class RiddhaHttpService {
     }
   }
 
+//Put Method
   Future<Map<String, dynamic>> put(String url, Map<String, dynamic> json,
       {Map<String, String>? headers}) async {
     var response = await _client.put(Uri.parse(url),
@@ -56,6 +60,7 @@ class RiddhaHttpService {
     return {};
   }
 
+//Delete Method
   Future<Map<String, dynamic>> delete(String url,
       {Map<String, String>? headers}) async {
     var response = await _client.delete(

@@ -18,19 +18,26 @@ Easy http methods as services.
 
 ## Getting started
 
-Run this command:
+Future-based http service library for making HTTP requests.
 
-With Flutter:
+Simple to consume HTTP resources. It's multi-platform, and supports mobile, desktop,
+and the browser.
 
- $ flutter pub add riddhahttp
-This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
+## Using
 
-dependencies:
-  riddhahttp: ^0.0.1
-Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
+The easiest way to use this library is via the top-level functions. They allow
+you to make individual HTTP requests with minimal hassle:
 
-Import it
-Now in your Dart code, you can use:
-
+```dart
 import 'package:riddhahttp/riddhahttp.dart';
 
+//Post Method
+String url = '';
+var result = await  RiddhaHttpService().get(url);
+print('Result: ${result}');
+
+
+//Post Method
+String url = '';
+var result = await  RiddhaHttpService().post(url,{});
+print('Result: ${result}');
