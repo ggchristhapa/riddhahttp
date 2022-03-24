@@ -1,6 +1,6 @@
 name: riddhahttp
 description: A Package over Flutter Http package which enables to make http calls in an easier way with minimal code.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/riddhasoftchris/riddhahttp
 
 environment:
